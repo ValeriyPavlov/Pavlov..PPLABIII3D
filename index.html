@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <script src="./js/scripts.js" type="module" defer></script>
+    <title>Primer Parcial Laboratorio III</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./img/LogoSuperheroes.png" alt="Logo" id="logo"/>
+            <ul id="ul-header">
+                <li><a href="#">Home</a></li>
+                <li><a href="principal.html">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="titulo">Crud Heroes</h1>
+        <section class="seccion-formulario">
+            <fieldset class="field-formulario">
+                <legend>Informacion del Superheroe</legend>
+                <form id="form-abm">
+                    <div>
+                        <input type="hidden" id="txtId" name="txtId" value="">
+                        <label class="label_formulario">NOMBRE:</label>
+                        <input type="text" id="txtNombre" name="txtNombre" placeholder="Ingrese nombre:" autocomplete="off" class="input">
+                        <small></small>
+                    </div>
+                    <div>
+                        <label class="label_formulario"><img src="./img/iconoSuper.png" class="icono">ALIAS:</label>
+                        <input type="text" id="txtAlias" name="txtAlias" placeholder="Ingrese alter-ego" autocomplete="off" class="input">
+                        <small></small>
+                    </div>
+                    <div>
+                        <label class="label_formulario"><img src="./img/iconoBook.png" class="icono">EDITORIAL:</label>
+                        <input type="radio" name="rdoEditorial" id="txtEditorial" value="Marvel" checked><img src="./img/IconoMarvel.jpg" class="icono">
+                        <input type="radio" name="rdoEditorial" id="txtEditorial" value="DC"><img src="./img/IconoDC.jpg" class="icono">
+                    </div>
+                    <div>
+                        <label class="label_formulario"><img src="./img/iconoFuerza.jpg" class="icono">FUERZA:</label>
+                        <input type="range" id="txtFuerza" name="txtFuerza"class="input" min="1" max="100" value="1">
+                        <small></small>
+                    </div>
+                    <div>
+                        <img src="./img/iconoArma.jpg" alt="Arma" class="icono">ARMA
+                        <select name="opcArma" id="txtArma"></select>
+                        <small></small>
+                    </div>
+                </form>
+            </fieldset>
+                <article id="botones-container">
+                    <button id="btnGuardar" disabled class="boton"><img src="./img/Icono Guardar.png" class="icono">Guardar</button>
+                    <button id="btnCancelar" disabled class="boton">Cancelar</button>
+                    <button id="btnEliminar" disabled class="boton">Eliminar</button>
+                </article>
+        </section>
+        <section class="seccion-tabla" id="table-container">
+            <div id="spinner"></div>
+            <div id="tabla"></div>
+        </section>
+    </main>
+    <footer id="footer">
+        <nav>
+            <ul id="ul-footer">
+                <li><a href="#">Home</a></li>
+                <li><a href="principal.html">Personajes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <span>Laboratorio III - Todos los derechos reservados&copy;</span>
+        </nav>
+    </footer>
+</body>
+</html>

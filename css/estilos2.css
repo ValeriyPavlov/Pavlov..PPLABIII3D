@@ -1,0 +1,221 @@
+/* Nav de header y footer */
+nav
+{
+    background-color: rgba(0,0,255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Logo header */
+#logo
+{
+    height: 150px;
+    width: 150px;
+}
+
+/* Eliminar subrayado de elementos */
+ul
+{
+    list-style-type: none;
+}
+
+body
+{
+    background-image: url(../img/Fondo.png);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+/* Estilo de items del nav */
+a
+{
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: #02c7f8;
+    border-radius: 5px;
+}
+
+li
+{
+    padding: 10px;
+}
+
+/* Alineacion de los items del header */
+#ul-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Alineacion de los items del footer */
+#ul-footer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#titulo 
+{
+    text-align: center;
+}
+
+legend
+{
+    background-color: Red;
+    border: 1px solid white;
+    font-size: large;
+}
+
+/* Color fondo Formulario ABM*/
+.field-formulario
+{
+    background-color: rgba(0, 149, 255, 0.8);
+}
+
+/* Tamaño iconos */
+.icono
+{
+    height: 50px;
+    width: 50px;
+}
+
+/* Color fondo inputs */
+.input, select
+{
+    background-color: rgb(241, 236, 185);
+}
+
+form>div
+{
+    padding: 15px;
+    text-align: center;
+}
+
+fieldset
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 10px;
+}
+
+#conteiner-iconos
+{
+    display: flex;
+    justify-content: center;
+}
+
+div
+{
+    padding: 10px;
+}
+
+/* Container Botones*/
+#botones-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boton
+{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: rgb(241, 114, 114);
+}
+
+#btnGuardar
+{
+    background-color: rgb(104, 223, 104);
+}
+
+button:disabled
+{
+    background-color: grey;
+}
+
+/* TABLA */
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+th{
+    text-transform: capitalize;
+}
+
+td{
+    text-align: center;
+}
+
+/* Color background filas Pares e Impares */
+.rowPar
+{
+    background-color: #b7b6b6;
+}
+
+.rowImpar
+{
+    background-color: rgb(167, 166, 166);
+}
+
+/* Color cabecera */
+.cabecera
+{
+    background-color: rgb(240, 190, 62);
+}
+
+/* Tamaño imagen spinner */
+#spinner-girando
+{
+    height: 200px;
+    width: 200px;
+}
+
+#spinner
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Color borde validacion */
+.errorValidacion
+{
+    border: 2px solid red;
+}
+
+/* Color mensaje validacion */
+small
+{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+footer
+{
+    margin-top: 20px;
+}
+
+/* Screen Ajustable */
+@media screen and (max-width: 800px) {
+    #ul-header, #ul-footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

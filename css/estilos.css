@@ -1,0 +1,107 @@
+nav
+{
+    background-color: rgba(0,0,255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#logo
+{
+    height: 150px;
+    width: 150px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: #52caf2;
+    border-radius: 5px;
+}
+
+li
+{
+    padding: 10px;
+}
+
+#ul-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#ul-footer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+h1
+{
+    color: white;
+}
+
+body
+{
+    background-image: url(../img/Fondo.png);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+#section-cards, h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 20px 20px;
+    border: 1px solid yellow;
+    background-color: rgba(240, 180, 150, 0.8);
+    width: 20%;
+}
+
+h3 
+{
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: rgb(4, 4, 104);
+    padding: 0px 15px;
+}
+
+p
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+button 
+{
+    display: block;
+    border-radius: 10px;
+    background-color: crimson;
+    margin: 10px auto;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 65%;
+}
+
+/* Screen Ajustable */
+@media screen and (max-width: 800px) {
+    #ul-header, #ul-footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
